@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Holy Land Fee Calculator",
+  "version": "1.0",
+  "description": "Calculate the total cost of your order, including shipping and customs fees.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
