@@ -2,12 +2,20 @@
   "manifest_version": 3,
   "name": "Holy Land Fee Calculator",
   "version": "1.0",
-  "description": "Calculate the total cost of your order, including shipping and customs fees.",
-  "permissions": ["activeTab", "scripting"],
+  "description": "Calculates the price including local taxes, shipping and customs fees for products on Thomann.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": [
+        "https://www.thomann.de/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
     }
   ]
 }
