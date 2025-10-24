@@ -434,13 +434,21 @@ function calculateHolyLandFee(initialPrice) {
 
 ### 4. Security: API Key Exposure
 
-**CRITICAL**: Line 15 of content.js exposes ExchangeRate API key in client-side code!
+**FIXED**: API key now properly secured using environment variables!
 
 ```javascript
-const API_KEY = '32cc555cf69faf942bc3777a'; // DO NOT KEEP IN CONTENT SCRIPT!
+// OLD (INSECURE):
+const API_KEY = '32cc555cf69faf942bc3777a'; // Exposed in client code!
+
+// NEW (SECURE):
+const EXCHANGE_RATE_API_KEY = import.meta.env.VITE_EXCHANGE_RATE_API_KEY;
 ```
 
-**Fix**: Move to background service worker (Week 1, Day 5 of refactoring plan)
+**Security measures**:
+- API key stored in `.env` file (gitignored)
+- Injected at build time via Vite
+- Not exposed in source code or repository
+- Template provided in `.env.example`
 
 ### 5. Exchange Rate Caching
 

@@ -346,7 +346,7 @@ Move API key to background service worker:
 ```typescript
 // src/background/service-worker.ts
 
-const EXCHANGE_RATE_API_KEY = '32cc555cf69faf942bc3777a';
+const EXCHANGE_RATE_API_KEY = 'YOUR_API_KEY_HERE';
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {

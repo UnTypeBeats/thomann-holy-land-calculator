@@ -16,8 +16,17 @@ import { PriceCalculator } from '../shared/calculation-engine';
 import { CACHE_DURATION, API_ENDPOINTS } from '../shared/constants';
 import { logger } from '../utils/logger';
 
-// API Key - SECURE (not exposed to content scripts)
-const EXCHANGE_RATE_API_KEY = '32cc555cf69faf942bc3777a';
+// API Key - SECURE (loaded from environment variable at build time)
+// For development: Set VITE_EXCHANGE_RATE_API_KEY in .env file
+// For production: Inject via build process
+const EXCHANGE_RATE_API_KEY = import.meta.env.VITE_EXCHANGE_RATE_API_KEY;
+
+// Validate API key is present
+if (!EXCHANGE_RATE_API_KEY || EXCHANGE_RATE_API_KEY === 'your_api_key_here') {
+  console.error(
+    'CRITICAL: Exchange rate API key not configured! Please set VITE_EXCHANGE_RATE_API_KEY in .env file'
+  );
+}
 
 // Initialize calculator
 const calculator = new PriceCalculator();

@@ -12,4 +12,10 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: false,
   },
+  define: {
+    // Inject environment variables at build time
+    'import.meta.env.VITE_EXCHANGE_RATE_API_KEY': JSON.stringify(
+      process.env.VITE_EXCHANGE_RATE_API_KEY
+    ),
+  },
 });
