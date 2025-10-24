@@ -1,0 +1,1222 @@
+[
+  {
+    "order_id": "14125",
+    "date": "2025-41-01",
+    "summary": {
+      "sheet_name": "14125",
+      "total_eur": 567.78,
+      "shipping_eur": 140.0,
+      "customs_eur": 152.2004,
+      "gross_total_eur": 859.9804,
+      "gross_total_ils": 3193.484854,
+      "hlf_total_eur": 292.2004,
+      "hlf_total_ils": 1085.068394,
+      "exchange_rate": 3.713439113
+    },
+    "items": [
+      {
+        "name": "Rockboard Flat TRS Cable 60 cm",
+        "quantity": 0,
+        "item_total": 2.0,
+        "unit_price": 6.22
+      },
+      {
+        "name": "Behringer Studio M",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 49.58
+      },
+      {
+        "name": "ESI aktiv 05",
+        "quantity": 0,
+        "item_total": 2.0,
+        "unit_price": 78.99
+      },
+      {
+        "name": "Elixir Nanoweb Baritone",
+        "quantity": 0,
+        "item_total": 2.0,
+        "unit_price": 10.08
+      },
+      {
+        "name": "Millenium Foot Rest",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 4.62
+      },
+      {
+        "name": "Ernie Ball PolyLock Strap BK",
+        "quantity": 0,
+        "item_total": 2.0,
+        "unit_price": 15.04
+      },
+      {
+        "name": "Cordial EM 3 MV elements",
+        "quantity": 0,
+        "item_total": 2.0,
+        "unit_price": 6.22
+      },
+      {
+        "name": "Cordial EM 6 MV elements",
+        "quantity": 0,
+        "item_total": 2.0,
+        "unit_price": 8.57
+      },
+      {
+        "name": "pro snake 20091 Headphone Extension",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 7.14
+      },
+      {
+        "name": "Cordial CCM 7,5 FM",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 12.18
+      },
+      {
+        "name": "Audient iD4 MKII",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 111.76
+      },
+      {
+        "name": "the sssnake IPP1060",
+        "quantity": 0,
+        "item_total": 2.0,
+        "unit_price": 3.78
+      },
+      {
+        "name": "pro snake TPI-Twin 6.0",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 7.98
+      },
+      {
+        "name": "Shure SM58-Set",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 108.4
+      },
+      {
+        "name": "the t.bone SM58 Replacement Screen Silver",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 8.32
+      }
+    ],
+    "item_count": 15
+  },
+  {
+    "order_id": "14420",
+    "date": "2020-44-01",
+    "summary": {
+      "sheet_name": "14420",
+      "total_eur": null,
+      "shipping_eur": null,
+      "customs_eur": null,
+      "gross_total_eur": null,
+      "gross_total_ils": null,
+      "hlf_total_eur": null,
+      "hlf_total_ils": null,
+      "exchange_rate": null
+    },
+    "items": [],
+    "item_count": 0
+  },
+  {
+    "order_id": "17421",
+    "date": "2021-74-01",
+    "summary": {
+      "sheet_name": "17421",
+      "total_eur": null,
+      "shipping_eur": null,
+      "customs_eur": null,
+      "gross_total_eur": null,
+      "gross_total_ils": null,
+      "hlf_total_eur": null,
+      "hlf_total_ils": null,
+      "exchange_rate": null
+    },
+    "items": [],
+    "item_count": 0
+  },
+  {
+    "order_id": "191222",
+    "date": "2022-12-19",
+    "summary": {
+      "sheet_name": "191222",
+      "total_eur": null,
+      "shipping_eur": 50.0,
+      "customs_eur": 50.0,
+      "gross_total_eur": 718.38,
+      "gross_total_ils": 2588.121994,
+      "hlf_total_eur": 100.0,
+      "hlf_total_ils": 360.272,
+      "exchange_rate": 3.60272
+    },
+    "items": [
+      {
+        "name": "Millenium GS-2001 E",
+        "quantity": 2,
+        "item_total": 13.28,
+        "unit_price": 6.64
+      },
+      {
+        "name": "Thomann E-Guitar Gigbag BK",
+        "quantity": 2,
+        "item_total": 41.84,
+        "unit_price": 20.92
+      },
+      {
+        "name": "Millenium BS-500 Set",
+        "quantity": 1,
+        "item_total": 41.18,
+        "unit_price": 41.18
+      },
+      {
+        "name": "Millenium KS-1013 Slim Black",
+        "quantity": 1,
+        "item_total": 21.01,
+        "unit_price": 21.01
+      },
+      {
+        "name": "Ernie Ball PolyLock Strap BK",
+        "quantity": 5,
+        "item_total": 75.2,
+        "unit_price": 15.04
+      },
+      {
+        "name": "Harley Benton HBZ-2005FL NT Deluxe Series",
+        "quantity": 1,
+        "item_total": 268.07,
+        "unit_price": 268.07
+      },
+      {
+        "name": "Thomann E-Guitar Gigbag BK",
+        "quantity": 1,
+        "item_total": 41.84,
+        "unit_price": 41.84
+      },
+      {
+        "name": "Thomann KB-15BM",
+        "quantity": 2,
+        "item_total": 115.96,
+        "unit_price": 57.98
+      }
+    ],
+    "item_count": 8
+  },
+  {
+    "order_id": "1925",
+    "date": "2025-09-01",
+    "summary": {
+      "sheet_name": "1925",
+      "total_eur": null,
+      "shipping_eur": 171.72,
+      "customs_eur": 130.7827215,
+      "gross_total_eur": 848.2127215,
+      "gross_total_ils": 3242.831743,
+      "hlf_total_eur": 302.5027215,
+      "hlf_total_ils": 1156.508742,
+      "exchange_rate": 3.823135
+    },
+    "items": [
+      {
+        "name": "Rode NT1 Signature Black",
+        "quantity": 1,
+        "item_total": 127.73,
+        "unit_price": 127.73
+      },
+      {
+        "name": "AKG K-240 MKII",
+        "quantity": 1,
+        "item_total": 64.71,
+        "unit_price": 64.71
+      },
+      {
+        "name": "Seymour Duncan Alex Skolnick Bridge Nickel",
+        "quantity": 1,
+        "item_total": 167.23,
+        "unit_price": 167.23
+      },
+      {
+        "name": "Thomann 10 Port USB 3.0 Hub",
+        "quantity": 1,
+        "item_total": 32.77,
+        "unit_price": 32.77
+      },
+      {
+        "name": "Harley Benton Wood Multi GuitarStand",
+        "quantity": 1,
+        "item_total": 66.39,
+        "unit_price": 66.39
+      },
+      {
+        "name": "Bare Knuckle 550K Std. Shaft Split P/P Pot",
+        "quantity": 1,
+        "item_total": 16.72,
+        "unit_price": 16.72
+      },
+      {
+        "name": "Harley Benton NeckWrap Small",
+        "quantity": 2,
+        "item_total": 13.28,
+        "unit_price": 6.64
+      },
+      {
+        "name": "Harley Benton HQS Singles 6x010",
+        "quantity": 2,
+        "item_total": 4.2,
+        "unit_price": 2.1
+      },
+      {
+        "name": "Lindy USB 2.0 Cable Typ A/B 5m",
+        "quantity": 2,
+        "item_total": 9.24,
+        "unit_price": 4.62
+      },
+      {
+        "name": "Daddario EXL140-3D",
+        "quantity": 1,
+        "item_total": 14.96,
+        "unit_price": 14.96
+      },
+      {
+        "name": "Ernie Ball 3215 3 Pack",
+        "quantity": 3,
+        "item_total": 14.2,
+        "unit_price": 4.733333333
+      },
+      {
+        "name": "Ernie Ball 2615 Skinny Top Heavy 7",
+        "quantity": 2,
+        "item_total": 14.28,
+        "unit_price": 7.14
+      }
+    ],
+    "item_count": 12
+  },
+  {
+    "order_id": "21225",
+    "date": "2025-12-02",
+    "summary": {
+      "sheet_name": "21225",
+      "total_eur": 332.05,
+      "shipping_eur": 120.0,
+      "customs_eur": 117.0,
+      "gross_total_eur": 569.05,
+      "gross_total_ils": 2113.132527,
+      "hlf_total_eur": 237.0,
+      "hlf_total_ils": 880.0850698,
+      "exchange_rate": null
+    },
+    "items": [
+      {
+        "name": "Thomann 9V 6LR",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 1.6
+      },
+      {
+        "name": "Black Mountain Pick BMP-RHH Spring Action H",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 4.87
+      },
+      {
+        "name": "Millenium 5AN Maple Drumsticks -Nylon-",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 1.93
+      },
+      {
+        "name": "Harley Benton NeckWrap Small",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 6.64
+      },
+      {
+        "name": "Harley Benton Stringwinder",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 1.26
+      },
+      {
+        "name": "Ernie Ball PolyLock Strap BK",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 15.04
+      },
+      {
+        "name": "Harley Benton Parts T-Style Dome Knob CH",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 2.51
+      },
+      {
+        "name": "Ernie Ball 2615 Skinny Top Heavy 7",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 7.14
+      },
+      {
+        "name": "Harley Benton Baritone-7 SBK",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 209.24
+      },
+      {
+        "name": "Harley Benton Parts T-Style Dome Knob BK",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 3.28
+      },
+      {
+        "name": "Vic Firth 7AB Nova Hickory Black Wood",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 5.04
+      },
+      {
+        "name": "Vic Firth 5A Nova Hickory Black Wood Tip",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 5.04
+      },
+      {
+        "name": "Millenium H5A Hickory Sticks Neon Green",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 7.48
+      },
+      {
+        "name": "Adam Hall 5410BLK Rack Screw Pack",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 2.94
+      },
+      {
+        "name": "Gravity MS U CLMP",
+        "quantity": 0,
+        "item_total": 0.0,
+        "unit_price": 4.19
+      }
+    ],
+    "item_count": 15
+  },
+  {
+    "order_id": "27120",
+    "date": "2020-71-02",
+    "summary": {
+      "sheet_name": "27120",
+      "total_eur": null,
+      "shipping_eur": null,
+      "customs_eur": null,
+      "gross_total_eur": null,
+      "gross_total_ils": null,
+      "hlf_total_eur": null,
+      "hlf_total_ils": null,
+      "exchange_rate": null
+    },
+    "items": [],
+    "item_count": 0
+  },
+  {
+    "order_id": "27622",
+    "date": "2022-76-02",
+    "summary": {
+      "sheet_name": "27622",
+      "total_eur": null,
+      "shipping_eur": 50.0,
+      "customs_eur": 20.0,
+      "gross_total_eur": 579.35,
+      "gross_total_ils": 2088.012161,
+      "hlf_total_eur": 97.0,
+      "hlf_total_ils": 349.59382,
+      "exchange_rate": 3.60406
+    },
+    "items": [
+      {
+        "name": "Harley Benton Ultimate Drive",
+        "quantity": 1,
+        "item_total": 25.13,
+        "unit_price": 25.13
+      },
+      {
+        "name": "Harley Benton Aeolus Frost Flame",
+        "quantity": 1,
+        "item_total": 335.29,
+        "unit_price": 335.29
+      },
+      {
+        "name": "Graph Tech PRL-8311-C0",
+        "quantity": 1,
+        "item_total": 100.0,
+        "unit_price": 100.0
+      },
+      {
+        "name": "Thomann 9V 6LR",
+        "quantity": 3,
+        "item_total": 4.8,
+        "unit_price": 1.6
+      },
+      {
+        "name": "Rotosound MAS11 Michael Amott Sign. Set",
+        "quantity": 3,
+        "item_total": 17.13,
+        "unit_price": 5.71
+      }
+    ],
+    "item_count": 5
+  },
+  {
+    "order_id": "28322",
+    "date": "2022-83-02",
+    "summary": {
+      "sheet_name": "28322",
+      "total_eur": null,
+      "shipping_eur": 222.59,
+      "customs_eur": 50.0,
+      "gross_total_eur": 944.35,
+      "gross_total_ils": 3344.50996,
+      "hlf_total_eur": 272.59,
+      "hlf_total_ils": 965.404744,
+      "exchange_rate": 3.5416
+    },
+    "items": [
+      {
+        "name": "Harley Benton Valuestrings Uke Black",
+        "quantity": 1,
+        "item_total": 0.83,
+        "unit_price": 0.83
+      },
+      {
+        "name": "Harley Benton Valuestrings CL Normal",
+        "quantity": 1,
+        "item_total": 2.08,
+        "unit_price": 2.08
+      },
+      {
+        "name": "dAndrea Guitar Care Kit Deluxe",
+        "quantity": 1,
+        "item_total": 15.72,
+        "unit_price": 15.72
+      },
+      {
+        "name": "Harley Benton Vintage Overdrive",
+        "quantity": 1,
+        "item_total": 24.88,
+        "unit_price": 24.88
+      },
+      {
+        "name": "Harley Benton TUBE15 Celestion",
+        "quantity": 1,
+        "item_total": 207.15,
+        "unit_price": 207.15
+      },
+      {
+        "name": "Rotosound MAS11 Michael Amott Sign. Set",
+        "quantity": 3,
+        "item_total": 16.95,
+        "unit_price": 5.65
+      },
+      {
+        "name": "Millenium GS-2001 E",
+        "quantity": 2,
+        "item_total": 13.14,
+        "unit_price": 6.57
+      },
+      {
+        "name": "Thomann DP-28 Plus",
+        "quantity": 1,
+        "item_total": 320.29,
+        "unit_price": 320.29
+      },
+      {
+        "name": "Thomann DP-26/28/SP5600 Stand",
+        "quantity": 1,
+        "item_total": 70.72,
+        "unit_price": 70.72
+      }
+    ],
+    "item_count": 9
+  },
+  {
+    "order_id": "28325",
+    "date": "2025-83-02",
+    "summary": {
+      "sheet_name": "28325",
+      "total_eur": null,
+      "shipping_eur": 130.0,
+      "customs_eur": 337.74229222,
+      "gross_total_eur": 1478.492292,
+      "gross_total_ils": 6083.034762,
+      "hlf_total_eur": 467.7422922,
+      "hlf_total_ils": 1924.4555,
+      "exchange_rate": 4.11435
+    },
+    "items": [],
+    "item_count": 0
+  },
+  {
+    "order_id": "3623",
+    "date": "2023-06-03",
+    "summary": {
+      "sheet_name": "3623",
+      "total_eur": null,
+      "shipping_eur": 170.0,
+      "customs_eur": 100.0,
+      "gross_total_eur": 1303.55,
+      "gross_total_ils": 5236.594989,
+      "hlf_total_eur": 270.0,
+      "hlf_total_ils": 1084.6386,
+      "exchange_rate": 4.01718
+    },
+    "items": [
+      {
+        "name": "Cordial CSI 6 RP Metal Silent",
+        "quantity": 2,
+        "item_total": 79.0,
+        "unit_price": 39.5
+      },
+      {
+        "name": "Presonus Revelator io24",
+        "quantity": 1,
+        "item_total": 116.81,
+        "unit_price": 116.81
+      },
+      {
+        "name": "Antelope Zen Q Synergy Core USB",
+        "quantity": 1,
+        "item_total": 713.45,
+        "unit_price": 713.45
+      },
+      {
+        "name": "Millenium SR-2012",
+        "quantity": 1,
+        "item_total": 113.45,
+        "unit_price": 113.45
+      },
+      {
+        "name": "Thomann E-Bass Gigbag Eco",
+        "quantity": 1,
+        "item_total": 10.84,
+        "unit_price": 10.84
+      }
+    ],
+    "item_count": 5
+  },
+  {
+    "order_id": "41119",
+    "date": "2019-11-04",
+    "summary": {
+      "sheet_name": "41119",
+      "total_eur": null,
+      "shipping_eur": 50.0,
+      "customs_eur": 50.0,
+      "gross_total_eur": 377.32,
+      "gross_total_ils": 1475.245736,
+      "hlf_total_eur": 100.0,
+      "hlf_total_ils": 390.98,
+      "exchange_rate": 3.9098
+    },
+    "items": [
+      {
+        "name": "Millenium R1 12\" Metronome Practice Pad",
+        "quantity": 1,
+        "item_total": 36.6,
+        "unit_price": 36.6
+      },
+      {
+        "name": "Techra XCarb 5b Carbon Sticks",
+        "quantity": 3,
+        "item_total": 74.64,
+        "unit_price": 24.88
+      },
+      {
+        "name": "Millenium Eco Stick Bag",
+        "quantity": 1,
+        "item_total": 4.08,
+        "unit_price": 4.08
+      },
+      {
+        "name": "Dunlop Big Stubby 24 pcs Pack 3.0",
+        "quantity": 4,
+        "item_total": 56.6,
+        "unit_price": 14.15
+      },
+      {
+        "name": "Thomann Orchestra Music Stand",
+        "quantity": 3,
+        "item_total": 34.68,
+        "unit_price": 11.56
+      },
+      {
+        "name": "Behringer Podcastudio USB",
+        "quantity": 1,
+        "item_total": 70.72,
+        "unit_price": 70.72
+      }
+    ],
+    "item_count": 6
+  },
+  {
+    "order_id": "41224",
+    "date": "2024-12-04",
+    "summary": {
+      "sheet_name": "41224",
+      "total_eur": 318.26,
+      "shipping_eur": 120.0,
+      "customs_eur": 105.0,
+      "gross_total_eur": 543.26,
+      "gross_total_ils": 2017.362933,
+      "hlf_total_eur": 225.0,
+      "hlf_total_ils": 835.5238004,
+      "exchange_rate": 3.713439113
+    },
+    "items": [
+      {
+        "name": "Lindy USB 2.0 Cable Typ A/B 5m",
+        "quantity": 1,
+        "item_total": 4.45,
+        "unit_price": 4.45
+      },
+      {
+        "name": "Lindy USB 2.0 Cable Typ A/B 3m BK",
+        "quantity": 2,
+        "item_total": 6.56,
+        "unit_price": 3.28
+      },
+      {
+        "name": "Cordial EM 0,5 FV elements",
+        "quantity": 3,
+        "item_total": 14.13,
+        "unit_price": 4.71
+      },
+      {
+        "name": "Flyht Pro Rack Tray 1U 9,5\"",
+        "quantity": 1,
+        "item_total": 10.84,
+        "unit_price": 10.84
+      },
+      {
+        "name": "Harley Benton Valuestrings CL Normal",
+        "quantity": 1,
+        "item_total": 2.1,
+        "unit_price": 2.1
+      },
+      {
+        "name": "EBS PCF-DLS58 DLX Flat TRS New",
+        "quantity": 2,
+        "item_total": 14.96,
+        "unit_price": 7.48
+      },
+      {
+        "name": "Rockboard Flat TRS Cable 15 cm BK",
+        "quantity": 3,
+        "item_total": 17.4,
+        "unit_price": 5.8
+      },
+      {
+        "name": "Behringer HD400",
+        "quantity": 2,
+        "item_total": 42.02,
+        "unit_price": 21.01
+      },
+      {
+        "name": "Thomann Producer Backpack",
+        "quantity": 1,
+        "item_total": 29.41,
+        "unit_price": 29.41
+      },
+      {
+        "name": "the sssnake YPP2230",
+        "quantity": 1,
+        "item_total": 4.96,
+        "unit_price": 4.96
+      },
+      {
+        "name": "Audient iD14 MKII",
+        "quantity": 1,
+        "item_total": 171.43,
+        "unit_price": 171.43
+      }
+    ],
+    "item_count": 11
+  },
+  {
+    "order_id": "482025",
+    "date": "2025-20-48",
+    "summary": {
+      "sheet_name": "482025",
+      "total_eur": null,
+      "shipping_eur": 346.98,
+      "customs_eur": 143.4721405,
+      "gross_total_eur": 771.16,
+      "gross_total_ils": 3149.04,
+      "hlf_total_eur": 490.4521405,
+      "hlf_total_ils": 2002.766493,
+      "exchange_rate": 4.083510556
+    },
+    "items": [
+      {
+        "name": "Thomann Studio Table XL Wood",
+        "quantity": 1,
+        "item_total": 279.83,
+        "unit_price": 279.83
+      },
+      {
+        "name": "Harley Benton HQS EL 10-46",
+        "quantity": 3,
+        "item_total": 7.32,
+        "unit_price": 2.44
+      },
+      {
+        "name": "Harley Benton HQS EL 10-52",
+        "quantity": 5,
+        "item_total": 12.2,
+        "unit_price": 2.44
+      },
+      {
+        "name": "Ernie Ball 062 Single String Wound Set",
+        "quantity": 1,
+        "item_total": 6.3,
+        "unit_price": 6.3
+      },
+      {
+        "name": "Harley Benton Parts Locking Tuners 6L NI",
+        "quantity": 1,
+        "item_total": 32.77,
+        "unit_price": 32.77
+      },
+      {
+        "name": "Shure EAC46BKS",
+        "quantity": 1,
+        "item_total": 31.09,
+        "unit_price": 31.09
+      },
+      {
+        "name": "Rean NYS 240 (mini TRS female 3.5)",
+        "quantity": 4,
+        "item_total": 5.0,
+        "unit_price": 1.25
+      },
+      {
+        "name": "Neutrik NTP3 RC-B",
+        "quantity": 2,
+        "item_total": 9.58,
+        "unit_price": 4.79
+      },
+      {
+        "name": "Amphenol ACPS-RB",
+        "quantity": 2,
+        "item_total": 6.22,
+        "unit_price": 3.11
+      },
+      {
+        "name": "Harley Benton HQS Singles 6x010",
+        "quantity": 3,
+        "item_total": 6.3,
+        "unit_price": 2.1
+      },
+      {
+        "name": "Sommer Cable SC Isopod SO-F22 BLK",
+        "quantity": 15,
+        "item_total": 11.25,
+        "unit_price": 0.75
+      },
+      {
+        "name": "Harley Benton HBCA-K Acoustic/Electric Capo",
+        "quantity": 1,
+        "item_total": 4.12,
+        "unit_price": 4.12
+      },
+      {
+        "name": "Harley Benton HQS EL 9-42",
+        "quantity": 5,
+        "item_total": 12.2,
+        "unit_price": 2.44
+      }
+    ],
+    "item_count": 13
+  },
+  {
+    "order_id": "6125",
+    "date": "2025-01-06",
+    "summary": {
+      "sheet_name": "6125",
+      "total_eur": 121.84,
+      "shipping_eur": null,
+      "customs_eur": null,
+      "gross_total_eur": 121.84,
+      "gross_total_ils": 458.983464,
+      "hlf_total_eur": 0.0,
+      "hlf_total_ils": 0.0,
+      "exchange_rate": 3.7671
+    },
+    "items": [
+      {
+        "name": "Presonus Studio One Pro 7 Upgrade",
+        "quantity": 0,
+        "item_total": 1.0,
+        "unit_price": 121.84
+      }
+    ],
+    "item_count": 1
+  },
+  {
+    "order_id": "81025",
+    "date": "2025-10-08",
+    "summary": {
+      "sheet_name": "81025",
+      "total_eur": null,
+      "shipping_eur": 126.26,
+      "customs_eur": 200.1002639,
+      "gross_total_eur": 982.0702639,
+      "gross_total_ils": 3722.0463,
+      "hlf_total_eur": 326.3602639,
+      "hlf_total_ils": 1236.9054,
+      "exchange_rate": 3.79
+    },
+    "items": [
+      {
+        "name": "Harley Benton HQS Singles 6x010",
+        "quantity": 4,
+        "item_total": 8.4,
+        "unit_price": 2.1
+      },
+      {
+        "name": "Harley Benton Wood Multi GuitarStand",
+        "quantity": 1,
+        "item_total": 66.39,
+        "unit_price": 66.39
+      },
+      {
+        "name": "Lindy USB 2.0 Cable Typ A/B 5m",
+        "quantity": 2,
+        "item_total": 9.24,
+        "unit_price": 4.62
+      },
+      {
+        "name": "Rode NT1 Signature Black",
+        "quantity": 1,
+        "item_total": 113.45,
+        "unit_price": 113.45
+      },
+      {
+        "name": "AKG K-240 MKII",
+        "quantity": 1,
+        "item_total": 64.71,
+        "unit_price": 64.71
+      },
+      {
+        "name": "Daddario EXL140-3D",
+        "quantity": 1,
+        "item_total": 16.72,
+        "unit_price": 16.72
+      },
+      {
+        "name": "Ernie Ball 3215 3 Pack",
+        "quantity": 3,
+        "item_total": 42.6,
+        "unit_price": 14.2
+      },
+      {
+        "name": "Ernie Ball 2615 Skinny Top Heavy 7",
+        "quantity": 3,
+        "item_total": 21.42,
+        "unit_price": 7.14
+      },
+      {
+        "name": "beyerdynamic EDT 770 V Ear Pads II",
+        "quantity": 1,
+        "item_total": 17.65,
+        "unit_price": 17.65
+      },
+      {
+        "name": "beyerdynamic Headband Pro",
+        "quantity": 1,
+        "item_total": 7.56,
+        "unit_price": 7.56
+      },
+      {
+        "name": "Thomann Wood Shaker",
+        "quantity": 1,
+        "item_total": 7.48,
+        "unit_price": 7.48
+      },
+      {
+        "name": "Thomann Egg Shaker www.thomann.de",
+        "quantity": 1,
+        "item_total": 0.76,
+        "unit_price": 0.76
+      },
+      {
+        "name": "Millenium Bongo Set Natural + Gigbag",
+        "quantity": 1,
+        "item_total": 37.82,
+        "unit_price": 37.82
+      },
+      {
+        "name": "Millenium Thomann Egg Shaker",
+        "quantity": 1,
+        "item_total": 0.84,
+        "unit_price": 0.84
+      },
+      {
+        "name": "Ernie Ball 2621",
+        "quantity": 2,
+        "item_total": 14.28,
+        "unit_price": 7.14
+      },
+      {
+        "name": "the sssnake SK366-3-BLK Midi",
+        "quantity": 1,
+        "item_total": 3.78,
+        "unit_price": 3.78
+      },
+      {
+        "name": "Ernie Ball 010 Single Slinky String Set",
+        "quantity": 1,
+        "item_total": 5.8,
+        "unit_price": 5.8
+      },
+      {
+        "name": "Nektar Impact GX 61",
+        "quantity": 1,
+        "item_total": 91.6,
+        "unit_price": 91.6
+      },
+      {
+        "name": "beyerdynamic DT-770 Pro 250 Ohm",
+        "quantity": 1,
+        "item_total": 125.21,
+        "unit_price": 125.21
+      }
+    ],
+    "item_count": 19
+  },
+  {
+    "order_id": "81223",
+    "date": "2023-12-08",
+    "summary": {
+      "sheet_name": "81223",
+      "total_eur": null,
+      "shipping_eur": 470.0,
+      "customs_eur": 985.2981691587,
+      "gross_total_eur": 5113.138169,
+      "gross_total_ils": 20115.08556,
+      "hlf_total_eur": 1455.298169,
+      "hlf_total_ils": 5725.142997,
+      "exchange_rate": 3.934
+    },
+    "items": [
+      {
+        "name": "Cordial CRI 6 RP Silent",
+        "quantity": 2,
+        "item_total": 82.36,
+        "unit_price": 41.18
+      },
+      {
+        "name": "Cordial CPDS5 CC",
+        "quantity": 1,
+        "item_total": 14.71,
+        "unit_price": 14.71
+      },
+      {
+        "name": "Sommer Cable Toslink Cable 5m",
+        "quantity": 1,
+        "item_total": 24.13,
+        "unit_price": 24.13
+      },
+      {
+        "name": "Elixir Nanoweb Light",
+        "quantity": 4,
+        "item_total": 43.36,
+        "unit_price": 10.84
+      },
+      {
+        "name": "Ibanez SRF705-BBF",
+        "quantity": 1,
+        "item_total": 915.13,
+        "unit_price": 915.13
+      },
+      {
+        "name": "Behringer ADA8200 Ultragain",
+        "quantity": 1,
+        "item_total": 184.03,
+        "unit_price": 184.03
+      },
+      {
+        "name": "Thomann CREATIVE BUNDLE #149",
+        "quantity": 1,
+        "item_total": 2394.12,
+        "unit_price": 2394.12
+      }
+    ],
+    "item_count": 7
+  },
+  {
+    "order_id": "8619",
+    "date": "2019-06-08",
+    "summary": {
+      "sheet_name": "8619",
+      "total_eur": null,
+      "shipping_eur": 50.0,
+      "customs_eur": 10.0,
+      "gross_total_eur": 165.65,
+      "gross_total_ils": 642.19192,
+      "hlf_total_eur": 60.0,
+      "hlf_total_ils": 232.608,
+      "exchange_rate": 3.8768
+    },
+    "items": [
+      {
+        "name": "Audient iD4",
+        "quantity": 1,
+        "item_total": 105.65,
+        "unit_price": 105.65
+      }
+    ],
+    "item_count": 1
+  },
+  {
+    "order_id": "8819",
+    "date": "2019-08-08",
+    "summary": {
+      "sheet_name": "8819",
+      "total_eur": null,
+      "shipping_eur": 50.0,
+      "customs_eur": 120.0,
+      "gross_total_eur": 1286.55,
+      "gross_total_ils": 4987.69704,
+      "hlf_total_eur": 170.0,
+      "hlf_total_ils": 659.056,
+      "exchange_rate": 3.8768
+    },
+    "items": [
+      {
+        "name": "Cordial CFM 1,5 VV",
+        "quantity": 10,
+        "item_total": 54.9,
+        "unit_price": 5.49
+      },
+      {
+        "name": "Elixir Nanoweb Light-Heavy",
+        "quantity": 2,
+        "item_total": 23.12,
+        "unit_price": 11.56
+      },
+      {
+        "name": "Cordial CCI 6 PP",
+        "quantity": 3,
+        "item_total": 27.21,
+        "unit_price": 9.07
+      },
+      {
+        "name": "Dunlop Big Stubby 24 pcs Pack 3.0",
+        "quantity": 3,
+        "item_total": 42.45,
+        "unit_price": 14.15
+      },
+      {
+        "name": "Roadworx Keyboard Stand 2",
+        "quantity": 1,
+        "item_total": 24.13,
+        "unit_price": 24.13
+      },
+      {
+        "name": "Thomann Keyboard Bag 1",
+        "quantity": 1,
+        "item_total": 27.45,
+        "unit_price": 27.45
+      },
+      {
+        "name": "Cordial CFM 3 MV",
+        "quantity": 1,
+        "item_total": 7.32,
+        "unit_price": 7.32
+      },
+      {
+        "name": "Millenium MS 2003",
+        "quantity": 1,
+        "item_total": 12.32,
+        "unit_price": 12.32
+      },
+      {
+        "name": "ADAM Audio A7X Stand Bundle",
+        "quantity": 1,
+        "item_total": 897.65,
+        "unit_price": 897.65
+      }
+    ],
+    "item_count": 9
+  },
+  {
+    "order_id": "8918",
+    "date": "2018-09-08",
+    "summary": {
+      "sheet_name": "8918",
+      "total_eur": null,
+      "shipping_eur": 50.0,
+      "customs_eur": 21.89,
+      "gross_total_eur": 200.0,
+      "gross_total_ils": 829.484,
+      "hlf_total_eur": 71.89,
+      "hlf_total_ils": 298.1580238,
+      "exchange_rate": 4.14742
+    },
+    "items": [
+      {
+        "name": "Dunlop Big Stubby 24 pcs Pack 3.0",
+        "quantity": 1,
+        "item_total": 13.31,
+        "unit_price": 13.31
+      },
+      {
+        "name": "Mackie CR4 BT",
+        "quantity": 1,
+        "item_total": 114.8,
+        "unit_price": 114.8
+      }
+    ],
+    "item_count": 2
+  },
+  {
+    "order_id": "91221",
+    "date": "2021-12-09",
+    "summary": {
+      "sheet_name": "91221",
+      "total_eur": null,
+      "shipping_eur": 50.0,
+      "customs_eur": 10.0,
+      "gross_total_eur": 409.07,
+      "gross_total_ils": 1438.371934,
+      "hlf_total_eur": 60.0,
+      "hlf_total_ils": 210.972,
+      "exchange_rate": 3.5162
+    },
+    "items": [
+      {
+        "name": "Harley Benton CST-24HB TOL Tobacco Flame",
+        "quantity": 1,
+        "item_total": 232.11,
+        "unit_price": 232.11
+      },
+      {
+        "name": "Elixir Nanoweb Light-Heavy",
+        "quantity": 10,
+        "item_total": 104.0,
+        "unit_price": 10.4
+      },
+      {
+        "name": "Harley Benton Valuestrings EL 10-46",
+        "quantity": 12,
+        "item_total": 12.96,
+        "unit_price": 1.08
+      }
+    ],
+    "item_count": 3
+  }
+]

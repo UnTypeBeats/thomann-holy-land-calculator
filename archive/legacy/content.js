@@ -7,8 +7,11 @@
 
 console.log('Holy Land Fee Calculator content script loaded');
 
+const avgOrderValue = 1010.75; // Average order value in Eur
 const MAM = 0.18; // Holy Land VAT percentage
 const DELIVERY_FEE = 130; // Fixed delivery fee in NIS for using UPS as a courier
+const customsFee = 150; // Customs fee the highest value
+const customsLowFee = 120; // Customs fee the lowest value
 const API_KEY = '32cc555cf69faf942bc3777a'; // ExchangeRate API key
 
 /**
@@ -20,10 +23,33 @@ const API_KEY = '32cc555cf69faf942bc3777a'; // ExchangeRate API key
  * @param {number} initialPrice - The initial price of the product.
  * @returns {number} - The total price including the Holy Land Fee.
  */
-
 function calculateHolyLandFee(initialPrice) {
-    const fee = initialPrice * MAM + (initialPrice < 1000 ? 50 : 75);
-    return initialPrice + fee + DELIVERY_FEE;
+    const partialFee = initialPrice / avgOrderValue;
+    const baseFeePreVat = initialPrice < 1000 ? customsLowFee : customsFee; // Fee *before* VAT
+    const feeBeforeVat = initialPrice + baseFeePreVat * partialFee + DELIVERY_FEE * partialFee; // Sum before VAT
+    const vatAmount = feeBeforeVat * MAM;
+    return feeBeforeVat + vatAmount;
+}
+
+function calculate() {
+    const priceEur = parseFloat(document.getElementById('priceEur').value) || 0;
+    const rate = parseFloat(document.getElementById('rate').value) || 0;
+    const delivery = parseFloat(document.getElementById('delivery').value) || 0;
+    const fixedFees = parseFloat(document.getElementById('fixedFees').value) || 0;
+    const vat = parseFloat(document.getElementById('vat').value) || 18;
+
+    const priceIls = priceEur * rate;
+    const cifValue = priceIls + delivery;
+    const vatAmount = cifValue * (vat / 100);
+    const total = vatAmount + fixedFees;
+
+    document.getElementById('output').innerHTML = `
+        <p>Стоимость в ₪: ${priceIls.toFixed(2)}</p>
+        <p>Стоимость с доставкой (CIF): ${cifValue.toFixed(2)} ₪</p>
+        <p>НДС (${vat}%): ${vatAmount.toFixed(2)} ₪</p>
+        <p>Фиксированные сборы: ${fixedFees.toFixed(2)} ₪</p>
+        <p><strong>Итого к оплате: ${total.toFixed(2)} ₪</strong></p>
+      `;
 }
 
 /**
@@ -71,35 +97,38 @@ function replaceDivs(priceData) {
         .price-row {
             display: flex;
             justify-content: flex-end;
-            padding: 8px;
+            align-items: center;
+            align-self: stretch;
         }
         .price-amount, .price-currency {
             text-align: right;
-            margin-left: 10px;
-        }
-        .price-amount {
-            font-size: 0.8em; /* Default size for amounts */
+            margin-left: 5px;
+            align-items: flex-end; /* Align row items to the bottom */
         }
         .price-row:first-child .price-amount {
             font-size: 1.1em;
             font-weight: bold;
+            line-height: 1.3em; /* Adjusted line height */
             color: green;
         }
         .price-row:first-child .price-currency {
-            font-size: 0.5em; /* Fixed size, same as other currency symbols */
+            font-size: 0.4em; /* Fixed size, same as other currency symbols */
             font-weight: 300;
             color: green;
         }
         .price-row:not(:first-child) .price-amount {
             color: grey;
+            font-weight: 300;
+            line-height: 0.5em; /* Adjusted line height */
+            font-size: 0.6em; /* Default size for amounts */
         }
         .price-row:not(:first-child) .price-currency {
             color: grey;
             font-weight: 300;
-            font-size: 0.5em; /* Fixed size for currency symbols */
+            font-size: 0.4em; /* Fixed size for currency symbols */
         }
         .price-currency {
-            font-size: 0.5em; /* Redundant, but ensures consistency */
+            font-size: 0.4em; /* Redundant, but ensures consistency */
         }
 `;
     document.head.appendChild(style);

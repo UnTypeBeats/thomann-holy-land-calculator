@@ -1,0 +1,34 @@
+{
+  "name": "holy-land-fee-calculator",
+  "version": "2.0.0",
+  "description": "Chrome extension that calculates true landed cost of Thomann.de products for Israeli customers",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json}\"",
+    "process-data": "python scripts/process-excel-data.py"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vite-plugin-web-extension": "^4.1.4",
+    "vitest": "^1.5.0",
+    "@vitest/ui": "^1.5.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

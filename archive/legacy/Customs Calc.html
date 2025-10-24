@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Калькулятор таможенных сборов (Израиль)</title>
+</head>
+<body>
+<h2>Калькулятор таможенных сборов 🇮🇱</h2>
+
+<label>Цена товара (EUR): <input type="number" id="priceEur" /></label><br/>
+<label>Курс EUR → ₪ : <input type="number" id="rate" value="4.2169" /></label><br/>
+<label>Стоимость доставки (₪): <input type="number" id="delivery" value="548.197" /></label><br/>
+<label>Фиксированные сборы (₪): <input type="number" id="fixedFees" value="555" /></label><br/>
+<label>НДС (%) : <input type="number" id="vat" value="18" /></label><br/><br/>
+
+<button onclick="calculate()">Рассчитать</button>
+
+<h3>Результат</h3>
+<div id="output"></div>
+
+<script>
+    function calculate() {
+        const priceEur = parseFloat(document.getElementById('priceEur').value) || 0;
+        const rate = parseFloat(document.getElementById('rate').value) || 0;
+        const delivery = parseFloat(document.getElementById('delivery').value) || 0;
+        const fixedFees = parseFloat(document.getElementById('fixedFees').value) || 0;
+        const vat = parseFloat(document.getElementById('vat').value) || 18;
+
+        const priceIls = priceEur * rate;
+        const cifValue = priceIls + delivery;
+        const vatAmount = cifValue * (vat / 100);
+        const total = vatAmount + fixedFees;
+
+        document.getElementById('output').innerHTML = `
+        <p>Стоимость в ₪: ${priceIls.toFixed(2)}</p>
+        <p>Стоимость с доставкой (CIF): ${cifValue.toFixed(2)} ₪</p>
+        <p>НДС (${vat}%): ${vatAmount.toFixed(2)} ₪</p>
+        <p>Фиксированные сборы: ${fixedFees.toFixed(2)} ₪</p>
+        <p><strong>Итого к оплате: ${total.toFixed(2)} ₪</strong></p>
+      `;
+    }
+</script>
+</body>

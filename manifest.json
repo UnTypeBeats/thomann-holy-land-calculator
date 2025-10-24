@@ -1,21 +1,50 @@
 {
   "manifest_version": 3,
   "name": "Holy Land Fee Calculator",
-  "version": "1.0",
-  "description": "Calculates the price including local taxes, shipping and customs fees for products on Thomann.",
+  "version": "2.1.0",
+  "description": "Calculates the true landed cost of Thomann.de products for Israeli customers, including shipping, customs, and VAT fees.",
   "permissions": [
-    "activeTab",
-    "scripting"
+    "storage",
+    "activeTab"
   ],
+  "host_permissions": [
+    "https://www.thomann.de/*",
+    "https://v6.exchangerate-api.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background/service-worker.ts",
+    "type": "module"
+  },
   "content_scripts": [
     {
       "matches": [
         "https://www.thomann.de/*"
       ],
       "js": [
-        "content.js"
+        "src/content/content-script.ts"
+      ],
+      "run_at": "document_idle",
+      "exclude_matches": [
+        "https://www.thomann.de/*/checkout*"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.thomann.de/*/checkout*"
+      ],
+      "js": [
+        "src/content/order-summary.ts"
       ],
       "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["src/data/*.json"],
+      "matches": ["https://www.thomann.de/*"]
     }
   ]
 }
