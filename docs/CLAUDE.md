@@ -1197,7 +1197,194 @@ AI: "Your CIF value is €523 (€450 product + €73 shipping).
 
 ---
 
-**Last Updated**: 2025-10-24 (**SECURITY HARDENED** - Ready for Chrome Web Store!)
-**Current Focus**: Visual assets creation and final testing
+---
+
+## 📦 SESSION UPDATE: Chrome Web Store Submission Package Complete (2025-10-24 Evening)
+
+### ✅ **Completed: Full Submission Preparation**
+
+**1. Bug Fixes & Features (Previous Session)**
+- ✅ Fixed settings persistence issue (popup.html script reference)
+- ✅ Implemented auto-reload on settings change
+  - Popup broadcasts SETTINGS_CHANGED to all Thomann tabs
+  - Content script listens and reinitializes calculations
+  - No manual refresh required when toggling Bulk ↔ Single mode
+- ✅ All features tested and working
+
+**2. Submission Package Creation**
+- ✅ Production build completed successfully
+  - All scripts compiled: service-worker.js, content-script.js, order-summary.js, popup.js
+  - Icons auto-copied to dist/icons/
+  - Manifest validated
+- ✅ Created submission ZIP: `holy-land-fee-calculator-v2.1.0.zip`
+  - **Size**: 60 KB compressed, 112 KB uncompressed
+  - **Files**: 34 files total
+  - **SHA256**: `f1ee93ceb57d4872e16070558c015d4f2aa4f6d13568774da2d04a3af31ec168`
+  - **Location**: `submission/` directory
+
+**3. Comprehensive Documentation**
+- ✅ **SUBMISSION_MANIFEST.md** - Technical package details
+  - Complete contents listing
+  - Permissions justification
+  - Privacy & security notes
+  - Testing checklist
+  - Known limitations
+
+- ✅ **SUBMISSION_GUIDE.md** - Step-by-step submission process
+  - Chrome Web Store Developer Dashboard walkthrough
+  - Store listing information (name, description, category)
+  - Privacy policy and legal requirements
+  - Screenshot requirements and creation guide
+  - Distribution settings
+  - Post-approval maintenance guide
+  - Troubleshooting common issues
+  - Timeline and success metrics
+
+**4. Ready for Submission Checklist**
+- ✅ Package created and verified (60 KB)
+- ✅ All icons present (16, 48, 128)
+- ✅ Manifest v3 validated
+- ✅ Privacy policy ready (PRIVACY_POLICY.md)
+- ✅ API key secured (environment variables)
+- ✅ Permissions documented and justified
+- ✅ Store listing content prepared
+- ✅ Submission guide complete
+- ⏭️ **NEXT**: Create screenshots and submit to Chrome Web Store
+
+### 📊 Final Status
+
+**Package Details**:
+```
+Version: 2.1.0
+Format: ZIP
+Size: 60 KB (compressed)
+Files: 34
+Manifest: V3
+```
+
+**Features Complete**:
+- ✅ Order summary calculator (10-20% accuracy)
+- ✅ Product page estimator (quick ballpark)
+- ✅ Settings persistence (Bulk/Single mode)
+- ✅ Auto-reload on settings change
+- ✅ Height constraint fixes
+- ✅ Exchange rate caching (24h TTL)
+- ✅ Real-time price calculations
+- ✅ Proportional fee allocation
+
+**Documentation Complete**:
+- ✅ README.md (user-facing)
+- ✅ CLAUDE.md (developer guidance)
+- ✅ PRIVACY_POLICY.md (Chrome Web Store requirement)
+- ✅ SETUP.md (developer onboarding)
+- ✅ PRE_PUBLICATION_CHECKLIST.md (quality assurance)
+- ✅ SUBMISSION_MANIFEST.md (package details)
+- ✅ SUBMISSION_GUIDE.md (submission process)
+- ✅ .env.example (security template)
+
+**Security Status**:
+- ✅ API key secured via environment variables
+- ✅ No sensitive data in repository
+- ✅ Privacy policy GDPR compliant
+- ✅ No data collection or tracking
+- ✅ All permissions justified
+
+**Testing Status**:
+- ✅ Order summary page (5-item order verified)
+- ✅ Product pages (estimates working)
+- ✅ Settings toggle (persistence verified)
+- ✅ Auto-reload (no manual refresh needed)
+- ✅ Height fixes (all items visible)
+- ✅ Exchange rate fetching (API working)
+
+### 🎯 What's Left Before Chrome Web Store
+
+**Required**:
+1. **Screenshots** (1-5 images, 1280x800):
+   - Product page with Israeli price
+   - Order summary with calculations
+   - Settings popup (optional)
+   - Multi-item breakdown (optional)
+
+2. **Test Final Package**:
+   - Load `holy-land-fee-calculator-v2.1.0.zip` in Chrome
+   - Verify all functionality
+   - Check for console errors
+
+3. **Submit**:
+   - Upload ZIP to Chrome Web Store Developer Dashboard
+   - Fill store listing (use content from SUBMISSION_GUIDE.md)
+   - Add privacy policy URL
+   - Submit for review
+
+**Optional (Can do later)**:
+- Promotional images (440x280, 1400x560)
+- Feature video/demo
+- User guide
+
+### 📁 Repository Organization
+
+**Submission Files** (all in `submission/`):
+```
+submission/
+├── holy-land-fee-calculator-v2.1.0.zip  (60 KB - READY TO SUBMIT)
+├── SUBMISSION_MANIFEST.md               (Package technical details)
+└── SUBMISSION_GUIDE.md                  (Step-by-step submission process)
+```
+
+**Key Project Files**:
+```
+/
+├── dist/                                (Built extension - auto-generated)
+├── src/                                 (Source code)
+│   ├── background/service-worker.ts     (Exchange rates, caching)
+│   ├── content/order-summary.ts         (Checkout calculator - 449 lines)
+│   ├── content/content-script.ts        (Product page estimator)
+│   ├── popup/popup.ts + popup.html      (Settings UI)
+│   ├── shared/                          (Calculation engine, types)
+│   └── utils/logger.ts                  (Logging utility)
+├── docs/
+│   ├── CLAUDE.md                        (This file - developer guidance)
+│   └── PRE_PUBLICATION_CHECKLIST.md     (QA checklist)
+├── PRIVACY_POLICY.md                    (Chrome Web Store requirement)
+├── SETUP.md                             (Developer onboarding)
+├── .env.example                         (API key template)
+└── submission/                          (Submission package + docs)
+```
+
+### 🚀 Next Steps (In Order)
+
+**Immediate** (user can do):
+1. Create screenshots on real Thomann.de pages
+2. Test ZIP package in clean Chrome profile
+3. Upload to Chrome Web Store Developer Dashboard
+4. Submit for review
+
+**After Approval** (1-3 days):
+1. Test installation from Chrome Web Store
+2. Monitor initial user reviews
+3. Share with Israeli music community
+4. Plan v2.2 features based on feedback
+
+### 💡 Future Enhancements (Post-Launch)
+
+**v2.2 Ideas**:
+- Error handling with user-friendly messages
+- "Report incorrect calculation" button
+- Loading states during calculation
+- Better tooltip design
+- Mobile responsiveness improvements
+
+**v3.0 Ideas**:
+- Machine learning for better customs estimates
+- Price history tracking
+- Bulk order optimizer
+- Multi-currency support (USD, GBP)
+- Browser extension for Firefox/Edge
+
+---
+
+**Last Updated**: 2025-10-24 23:30 (**SUBMISSION READY** 🎉)
+**Current Focus**: Screenshots → Final testing → Chrome Web Store submission
 **GitHub**: https://github.com/UnTypeBeats/thomann-holy-land-calculator
-**Status**: ✅ Order summary WORKING | ✅ Security FIXED | 🔒 Publication-ready | 🎨 Creating assets...
+**Status**: ✅ Package READY | ✅ Docs COMPLETE | 📦 ZIP Created (60 KB) | 📸 Screenshots needed
