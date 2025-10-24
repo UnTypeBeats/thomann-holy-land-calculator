@@ -413,37 +413,164 @@ async function expandAllItems(): Promise<void> {
   }
 }
 
+// Track if we've already initialized to prevent duplicate runs
+let isInitialized = false;
+let isInitializing = false;
+
+/**
+ * Check if we're on the order summary page
+ */
+function isOrderSummaryPage(): boolean {
+  // Check URL contains checkout
+  const isCheckoutUrl = window.location.href.includes('/checkout');
+
+  // Check for presence of order summary elements
+  const hasOrderSummary = document.querySelector('[data-testid="summary-block-order"]') !== null ||
+                          document.querySelector('.summary-product') !== null;
+
+  return isCheckoutUrl && hasOrderSummary;
+}
+
+/**
+ * Check if HLF boxes already exist on the page
+ */
+function hasHLFBoxes(): boolean {
+  return document.querySelector('.hlf-israeli-price-row') !== null;
+}
+
 /**
  * Initialize order summary calculator
  */
 async function init(): Promise<void> {
-  logger.info('Order Summary Calculator initializing...');
-
-  // Wait for page to fully load
-  if (document.readyState !== 'complete') {
-    await new Promise((resolve) => window.addEventListener('load', resolve));
-  }
-
-  // Expand all items first (click "Show all" if needed)
-  await expandAllItems();
-
-  // Parse order data
-  const orderData = parseOrderData();
-
-  if (!orderData || orderData.items.length === 0) {
-    logger.warn('Could not parse order data or no items found');
+  // Prevent duplicate initialization
+  if (isInitializing || isInitialized) {
+    logger.debug('Init already running or completed, skipping');
     return;
   }
 
-  // Display HLF calculations
-  await displayHLF(orderData);
+  // Check if we're actually on the order summary page
+  if (!isOrderSummaryPage()) {
+    logger.debug('Not on order summary page, skipping init');
+    return;
+  }
 
-  logger.info('Order Summary Calculator initialized successfully');
+  // Check if HLF boxes already exist
+  if (hasHLFBoxes()) {
+    logger.debug('HLF boxes already present, skipping init');
+    isInitialized = true;
+    return;
+  }
+
+  isInitializing = true;
+  logger.info('Order Summary Calculator initializing...');
+
+  try {
+    // Wait for page to fully load
+    if (document.readyState !== 'complete') {
+      await new Promise((resolve) => window.addEventListener('load', resolve));
+    }
+
+    // Give Thomann's JS a moment to fully render
+    await new Promise((resolve) => setTimeout(resolve, 300));
+
+    // Expand all items first (click "Show all" if needed)
+    await expandAllItems();
+
+    // Parse order data
+    const orderData = parseOrderData();
+
+    if (!orderData || orderData.items.length === 0) {
+      logger.warn('Could not parse order data or no items found');
+      isInitializing = false;
+      return;
+    }
+
+    // Display HLF calculations
+    await displayHLF(orderData);
+
+    isInitialized = true;
+    logger.info('Order Summary Calculator initialized successfully');
+  } catch (error) {
+    logger.error('Failed to initialize Order Summary Calculator', error as Error);
+  } finally {
+    isInitializing = false;
+  }
 }
 
-// Run when page loads
+/**
+ * Monitor for navigation to order summary page (for SPA-style navigation)
+ */
+function startNavigationMonitoring(): void {
+  logger.debug('Starting navigation monitoring');
+
+  // Monitor URL changes (for SPA navigation)
+  let lastUrl = window.location.href;
+  const checkUrlChange = () => {
+    const currentUrl = window.location.href;
+    if (currentUrl !== lastUrl) {
+      logger.debug('URL changed', { from: lastUrl, to: currentUrl });
+      lastUrl = currentUrl;
+
+      // Reset initialization state on URL change
+      isInitialized = false;
+      isInitializing = false;
+
+      // Try to initialize if we're on order summary
+      if (isOrderSummaryPage()) {
+        logger.info('Navigated to order summary page, initializing...');
+        setTimeout(() => init(), 500); // Small delay for content to load
+      }
+    }
+  };
+
+  // Check for URL changes every 500ms
+  setInterval(checkUrlChange, 500);
+
+  // Also monitor DOM changes for order summary content appearing
+  const observer = new MutationObserver((mutations) => {
+    // Check if order summary content appeared
+    if (!isInitialized && !isInitializing && isOrderSummaryPage()) {
+      // Look for the appearance of order summary elements
+      for (const mutation of mutations) {
+        if (mutation.addedNodes.length > 0) {
+          const hasOrderContent = Array.from(mutation.addedNodes).some((node) => {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+              const element = node as Element;
+              return (
+                element.classList?.contains('summary-product') ||
+                element.querySelector?.('.summary-product') !== null ||
+                element.getAttribute?.('data-testid') === 'summary-block-order'
+              );
+            }
+            return false;
+          });
+
+          if (hasOrderContent) {
+            logger.info('Order summary content detected via MutationObserver');
+            setTimeout(() => init(), 500);
+            break;
+          }
+        }
+      }
+    }
+  });
+
+  // Start observing the document body for changes
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+
+  logger.debug('Navigation monitoring started');
+}
+
+// Initialize on page load and start monitoring for navigation
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('DOMContentLoaded', () => {
+    init();
+    startNavigationMonitoring();
+  });
 } else {
   init();
+  startNavigationMonitoring();
 }
