@@ -37,6 +37,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       console.log(`Order mode changed to: ${newOrderMode}`);
 
+      // Notify all tabs about settings change
+      const tabs = await chrome.tabs.query({ url: '*://*.thomann.de/*' });
+      for (const tab of tabs) {
+        if (tab.id) {
+          chrome.tabs.sendMessage(tab.id, {
+            type: 'SETTINGS_CHANGED',
+            settings: { orderMode: newOrderMode },
+          }).catch(() => {
+            // Ignore errors if content script not loaded
+          });
+        }
+      }
+
       // Show feedback
       showFeedback(`Switched to ${newOrderMode === 'bulk' ? 'Bulk' : 'Single item'} mode`);
     });

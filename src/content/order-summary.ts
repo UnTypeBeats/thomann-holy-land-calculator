@@ -564,6 +564,30 @@ function startNavigationMonitoring(): void {
   logger.debug('Navigation monitoring started');
 }
 
+// Listen for settings changes from popup
+chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
+  if (message.type === 'SETTINGS_CHANGED') {
+    logger.info('Settings changed, reloading page calculations', message.settings);
+
+    // Remove existing HLF boxes
+    document.querySelectorAll('.hlf-israeli-price-row').forEach(el => el.remove());
+    document.querySelectorAll('[style*="background: linear-gradient(135deg, #4caf50"]').forEach(el => {
+      if (el.textContent?.includes('True Cost for Israeli Delivery')) {
+        el.remove();
+      }
+    });
+
+    // Reset state
+    isInitialized = false;
+    isInitializing = false;
+
+    // Reinitialize with new settings
+    setTimeout(() => init(), 300);
+
+    sendResponse({ success: true });
+  }
+});
+
 // Initialize on page load and start monitoring for navigation
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
